@@ -27,7 +27,7 @@ impl CLIResult {
 fn cli<'a>() -> ArgMatches<'a> {
     let matches = App::new("Temper")
     .version("0.1")
-    .about("A CLI-based tool that searches for temp directories or application directories based on an inputted string of text. Intended for Windows machines.")
+    .about("A CLI-based tool that performs searches on temp directories or application directories based on an inputted string of text. Intended for Windows machines.")
     .arg(Arg::with_name("search term")
         .short("s").long("search")
         .help("The search term that will be compared against directories and files")
